@@ -1,0 +1,17 @@
+#include <stdio.h>
+ int main() {
+     int guess, answer;
+     answer = 3;
+     printf("Please enter the guess: ");
+     scanf("%d", &guess);
+     if(guess == answer) {
+        printf("Correct!\n");
+     }
+     if(guess > answer) {
+        printf("Too larger!\n");
+     }
+     if(guess < answer) {
+        printf(“Too small!\n”);
+     }
+     return 0;
+}
